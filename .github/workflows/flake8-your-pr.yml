@@ -1,5 +1,8 @@
 name: Flake8 your PR
-# on: [pull_request]
+on:
+  push:
+    branches:
+      - master
 jobs:
   flake8-your-pr:
     runs-on: ubuntu-latest
